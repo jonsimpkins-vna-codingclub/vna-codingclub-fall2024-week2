@@ -1,0 +1,148 @@
+
+/** Style for the page body
+  * (the wrapper around all the other stuff)
+*/
+body {
+    margin: 0;
+}
+
+/** Style for the page header */
+h1 {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 16px;
+}
+
+.wheel {
+    width: 100px;
+    height: 100px;
+    background: lightgrey;
+    border: 4px solid black;
+    display: block;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    margin: 8px;
+}
+
+.letter.reveal {
+    transform: translateY( -100px ) ;
+    transition: transform 0.5s;
+}
+
+.wheel .letter {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 0;
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px;
+}
+
+#wheel-container {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.bottom-row.correct {
+    background: lightgreen;
+}
+
+.bottom-row.correct button {
+    display: none;
+}
+
+.bottom-row.wrong {
+    background: lightcoral;
+}
+
+.success-msg {
+    display: none;
+    line-height: 32px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bottom-row.correct .success-msg {
+    display: block;
+}
+
+.bottom-row {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: darkgrey;
+    padding-top: 6px;
+}
+
+.start-btn {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 4px 12px;
+    background: white;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.toggle-row {
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+}
+
+.toggle-label, .toggle-btn {
+    line-height: 32px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.toggle-label {
+    text-align: right;
+    margin-right: 12px;
+    flex: 1;
+}
+
+.toggle-btn {
+    width: 100px;
+    font-weight: bolder;
+
+    background: lightgrey;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.toggle-btn.true {
+    background: lightblue;
+    color: darkblue;
+    border: 1px solid darkblue;
+}
+
+#toggle-row-container {
+    width: 300px;
+    margin: auto;
+}
+
+#code-container {
+    margin: auto;
+    max-width: 300px;
+    background: lightgrey;
+    padding: 12px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#title-bar {
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
