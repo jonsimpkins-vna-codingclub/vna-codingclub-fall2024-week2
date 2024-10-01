@@ -74,10 +74,6 @@ h1 {
 }
 
 .bottom-row {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
     background: darkgrey;
     padding-top: 6px;
 }
@@ -133,7 +129,7 @@ h1 {
 }
 
 #code-container {
-    margin: auto;
+    margin: 12px auto;
     max-width: 300px;
     background: lightgrey;
     padding: 12px;
